@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="tituloH1" data-autor="Federico García Lorca">
+        Federico García Lorca
+    </h1>
+    <script>
+        // Obtenemos un referencia al elemento
+        let title = document.getElementById("tituloH1");
+
+        // En la propiedad dataset del elemento estarán todos los atributos data-*
+        alert(title.dataset.autor); // "Federico García Lorca"
+    </script>
+</body>
+
+</html>

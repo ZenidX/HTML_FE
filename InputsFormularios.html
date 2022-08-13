@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br><input type="text">
+    <button>Enviar text</button>
+    <br>.<br>
+    <br><input type="password">
+    <button>Enviar password</button>
+    <br>.<br>
+    <form action="">
+        <h1>¿Qué marca de móvil tienes?</h1>
+        <label for="iphone">Iphone</label>
+        <input type="radio" name="iphone" id="iphone" value="1">
+        <label for="android">Android</label>
+        <input type="radio" name="android" id="android" value="2">
+    </form>
+    
+    <br>.<br>
+    <form action="">
+        <h1>¿Qué marca de móvil tienes?</h1>
+        <label for="iphone">Iphone</label>
+        <input type="radio" name="mobile" id="iphone" value="1">
+        <label for="android">Android</label>
+        <input type="radio" name="mobile" id="android" value="2" checked>
+    </form>
+    
+    <br>.<br>
+    <form action="">
+        <h1>¿Cuál de estos colores te gusta?</h1>
+        <label for="rojo">Rojo</label>
+        <input type="checkbox" name="color" id="rojo" value="red" checked>
+        <label for="azul">Azul</label>
+        <input type="checkbox" name="color" id="azul" value="blue" checked>
+        <label for="amarillo">Amarillo</label>
+        <input type="checkbox" name="color" id="amarillo" value="yellow">
+        <label for="verde">Verde</label>
+        <input type="checkbox" name="color" id="verde" value="green">
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="colores">Selecciona una opción:</label>
+        <select name="color" id="colores">
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarillo">Amarillo</option>
+        </select>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="colores">Selecciona una opción:</label>
+        <select name="color" id="colores" multiple>
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarillo">Amarillo</option>
+        </select>
+        esto queda muy feo y se hace con el ctrl, meh
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="colores">Selecciona una opción:</label>
+        <select name="color" id="colores"><optgroup label="Colores parchis">
+            <option value="Rojo">Rojo</option>
+                <option value="Verde">Verde</option>
+                <option value="Azul">Azul</option>
+                <option value="Amarillo">Amarillo</option>
+            </optgroup>
+            <optgroup label="Colores ajedrez">
+                <option value="Blanco">Blanco</option>
+                <option value="Negro">Negro</option>
+            </optgroup>
+            <optgroup label="Colores tres en raya">
+                <option value="Amarillo">Amarillo</option>
+                <option value="Rojo">Rojo</option>
+            </optgroup>
+        </select> Opciones de grupo, esto mola.
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="browserSelected">¿Qué navegador estás utilizando?
+        <input list="browsersOpt" name="myBrowser" id="browserSelected" />
+        </label>
+        <datalist id="browsersOpt">
+            <option value="Brave"></option>
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+        </datalist>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="browserSelected">¿Qué navegador estás utilizando?
+        <input list="browsersOpt" name="myBrowser" id="browserSelected" /></label>
+        <datalist id="browsersOpt">
+            <option value="Brave">Brave Browser</option>
+            <option value="Chrome">Chrome Browser</option>
+            <option value="Firefox">Firefox Browser</option>
+            <option value="Internet Explorer">Explorer Browser</option>
+            <option value="Opera">Opera Browser</option>
+            <option value="Safari">Safari Browser</option>
+            <option value="Microsoft Edge">Edge Browser</option>
+        </datalist> No funciona...es igual que el anterior, sin descripción de opciones...
+    </form>
+    <br>.<br>
+    <br><input type="button">
+    <button>Enviar button</button>
+    <br>.<br>
+    <br><input type="color">
+    <button>Enviar color</button>
+    <br>.<br>
+    <br><input type="email">
+    <button>Enviar email</button>
+    <br>.<br>
+    <form action="">
+        <label for="fileInput">Introduce un fichero</label>
+        <input type="file" name="fileInput" id="fileInput" accept="image/*">
+        <button>Submit</button>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="jobTxt">Explica el porque te interesa el puesto</label><br>
+        <textarea name="jobTxt" id="jobTxt" cols="50" rows="5"></textarea>
+        <br>
+        <button>Submit</button>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for=""></label>
+        <progress max="10" min="0"></progress>
+        <button>Submit</button>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for=""></label>
+        <progress max="10" min="0" value="9"></progress>
+        <button>Submit</button>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="bateria">Bateria del dispositivo:</label>
+        <meter id="bateria" value="50" min="0" max="100"></meter>
+    </form>
+    <br>.<br>
+    <form action="">
+        <label for="bateria">Bateria del dispositivo:</label>
+        <meter id="bateria" value="24" min="0" max="100" low="25"  high="75" optimum="50"></meter>
+        <meter id="bateria" value="55" min="0" max="100" low="25"  high="75" optimum="50"></meter>
+        <meter id="bateria" value="80" min="0" max="100" low="25"  high="75" optimum="50"></meter>
+    </form>
+    <br>.<br>
+    Valor óptimo por encima de bajo y alto:<meter value="0.6" max="0.9" min="0.1" optimum="0.1" high="0.5" low="0.2"></meter><br>
+    Valor óptimo entre bajo y alto:        <meter value="0.6" max="0.9" min="0.1" optimum="0.4" high="0.5" low="0.2"></meter><br>
+    Valor óptimo por encima de bajo y alto:<meter value="0.6" max="0.9" min="0.1" optimum="0.6" high="0.5" low="0.2"></meter><br>
+    <br>.<br>
+    <form action="">
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos"><br>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+    <br>.<br>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos"><br>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+    <br>.<br>
+    <br><input type="hidden" name="elementoOculto">
+    <button>Enviar hidden</button>
+    <br>.<br>
+    <br><input type="image">
+    <button>Enviar image</button>
+    <br>.<br>
+    <br><input type="number">
+    <button>Enviar number</button>
+    <br>.<br>
+    <br><input type="range">
+    <button>Enviar range</button>
+    <br>.<br>
+    <br><input type="search">
+    <button>Enviar search</button>
+    <br>.<br>
+    <br><input type="tel">
+    <button>Enviar tel</button>
+    <br>.<br>
+    <br><input type="time">
+    <button>Enviar time</button>
+    <br>.<br>
+    <br><input type="date">
+    <button>Enviar date</button>
+    <br>.<br>
+    <br><input type="datetime-local">
+    <button>Enviar datetime-local</button>
+    <br>.<br>
+    <br><input type="week">
+    <button>Enviar week</button>
+    <br>.<br>
+    <br><input type="month">
+    <button>Enviar month</button>
+    <br>.<br>
+    <br><input type="url">
+    <button>Enviar url</button>
+    <br>.<br>
+    <br><input type="submit">
+    <button>Enviar submit</button>
+    <br>.<br>
+    <br><input type="reset">
+    <button>Enviar reset</button>
+    <br>.<br>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" name="nombre"><br>
+        <label for="nombre">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos"  name="apellidos"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+    <br>.<br>
+    <h1>
+        Atributos de formularios
+    </h1>
+    <form>
+        <label for="nombre">Introduce tu nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form action="#">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" pattern="[A-ZÑa-zñ]{3,}">
+        <input type="submit">
+    </form>
+    <br>.<br>
+    <form>
+        <label for="dni">Documento de Identidad:</label>
+        <input type="text" name="dni" id="dni" required placeholder="Ej.       12345678-A o X-12345678">
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <label for="pais">País:</label>
+        <input type="text" name="pais" id="pais"><br>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad" readonly    
+        value="Introduce un país"><br>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <!-- Disabled sin value -->
+        <label for="pais">País:</label>
+        <input type="text" name="pais" id="pais"   
+        value=""><br>
+        <!-- Disabled con value -->
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad" disabled 
+        value="Disabled con value"><br>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="0" max="120"> 
+        <br>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" minlength="3" maxlength="5"><br>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required oninvalid="this.setCustomValidity('Escribemelo mejor que no te escucho')"><br>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" autofocus><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br>
+        <button>Enviar</button>
+    </form>
+    <br>.<br>
+    <form>
+        <label for="coche">Selecciona un coche:</label>
+        <select id="coche">
+            <option value="mercedes">Mercedes</option>
+            <option value="bmv">BMV</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>

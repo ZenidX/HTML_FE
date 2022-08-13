@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Celda/Row 1</td>
+            <td>Celda/Row 2</td>
+        </tr>
+        <tr>
+            <td>Celda/Row 1</td>
+            <td>Celda/Row 2</td>
+        </tr>
+        <tr>
+            <td>Celda/Row 1</td>
+            <td>Celda/Row 2</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Itinerario formativo</caption>
+        <thead>
+            <tr>
+                <th>Nombre del curso</th>
+                <th>Horas totales</th>
+            </tr>
+            <tr>
+                <th>Nombre del curso</th>
+                <th>Horas totales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Formularios</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>* Al final de cada formación se realizará una prueba teórica y practica</td>
+                <td>1212papaya</td>
+            </tr>
+            <tr>
+                <td>* Al final de cada formación se realizará una prueba teórica y practica</td>
+                <td>1212papaya</td>
+            </tr>
+        </tfoot>
+    </table>
+    Quizas tienen propiedades diferentes pero thead tbody y tfoot son tres tablas encajadas sin más 
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <table>
+        <caption>Itinerario formativo</caption>
+        <thead>
+            <tr>
+                <th>Nombre del curso</th>
+                <th>Horas totales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td rowspan="2">80 fusion de celdas de diferentes filas provocando</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>70 se convirtio en adicional</td>
+            </tr>
+            <tr>
+                <td>Formularios</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">* Al final de cada formación se realizará una prueba teórica y practica</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Binario</th>
+                <th>Decimal</th>
+                <th>Hexadecimal</th>
+                <th>ASCII</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100100</td>
+                <td>36</td>
+                <td>24</td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>100101</td>
+                <td>37</td>
+                <td>25</td>
+                <td>%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
